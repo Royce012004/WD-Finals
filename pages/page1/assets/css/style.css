@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    & nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & a{
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s;
+            &:hover{
+                background-color: #555;
+            }
+        }
+        & h1{
+            font-size: 1.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}
+section.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    background: url(../img/TphJ.gif);
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+    & div{
+        background: #171717;
+background: linear-gradient(90deg,#171717 0%, #688c68 80%);
+background: -webkit-linear-gradient(90deg,#171717 0%, #688c68 80%);
+background: -moz-linear-gradient(90deg,#171717 0%, #688c68 80%);
+        border-radius: 1rem;
+        padding: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 1s;
+        & h2{
+            font-size: 1.5rem;
+            margin: .5rem 0;
+        }
+        & p{
+            font-size: 1rem;
+            margin: .5rem 0;
+        }
+        & a{
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+        }
+    }
+    & :hover{
+        transform: scale(1.1);
+        box-shadow: 33px 44px 33px 15px rgba(0,0,0,0.89);
+-webkit-box-shadow: 33px 44px 33px 15px rgba(0,0,0,0.89);
+-moz-box-shadow: 33px 44px 33px 15px rgba(0,0,0,0.89);
+    }
+}
