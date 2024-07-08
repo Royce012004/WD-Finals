@@ -2,6 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100dvh;
+    width: 100dvw;
+    background: url(../img/IMG_20240704_162210_946.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
 }
 header.header{
     display: flex;
@@ -10,8 +22,7 @@ header.header{
     align-items: start;
     height: 100dvh;
     padding: 0 1%;
-    width: 10dvh;
-    background-color: red;
+    background-color: black;
     & h1{
         font-size: 1.3rem;
         color: white;;
@@ -55,7 +66,7 @@ header.header{
     }
     & .dropdown a{
         display: block;
-        color: white;
+        color: black;
         text-decoration: none;
         font-size: 1rem;
         padding: 1rem;
@@ -63,7 +74,7 @@ header.header{
         text-align: center;
     }
     & .dropdown .content{
-        background-color: orangered;
+        background-color: yellow;
         display: none;
         min-width: 100px;
         transition: 4s;
@@ -71,4 +82,50 @@ header.header{
     & .dropdown:hover .content{
         display: block;
     }
+}
+section.hero{
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13rem;
+    & h1{
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+    }
+    & p{
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+    & .hero-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15rem;
+        width: 100%;
+        & a{
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            transition: 0.5s;
+            gap: 5rem;
+            opacity: 0.5;
+            transition: 1s;
+            &:hover{
+                opacity: 1;
+                transform: scale(1.1);
+                background-color: yellow;
+                color: black;
+            }
+    }
+}
 }
