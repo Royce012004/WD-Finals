@@ -29,7 +29,7 @@ header.header{
         font-size: 1.5rem;
         margin: 1rem 0;
     }
-    & .bar{
+    & button bar{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -45,5 +45,30 @@ header.header{
         width: 100%;
         gap: 1rem;
         margin-bottom: 1rem;
+    }
+    & .dropdown button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    & .dropdown a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    & .dropdown .content{
+        background-color: orangered;
+        display: none;
+        min-width: 100px;
+        transition: 4s;
+    }
+    & .dropdown:hover .content{
+        display: block;
     }
 }
