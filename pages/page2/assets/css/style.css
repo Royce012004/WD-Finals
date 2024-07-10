@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: #fff;
+    & h1{
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    & a{
+        color: #fff;
+        text-decoration: none;
+        transition: 1s;
+        font-size: 1.1rem;
+        &:hover{
+            color: black;
+            padding: .5rem;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+}
+section.aboutme{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100dvh;
+    width: 100dvw;
+    background: url(../img/IMG_20240704_162033_408.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    & div{
+        background-color: rgba(0,0,0,0.5);
+        padding: 20px;
+        border-radius: 10px;
+        transition: 1s;
+        &:hover{
+            background-color: rgba(0,0,0,0.8);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+    & h2{
+        font-size: 3rem;
+        text-shadow: 5px 4px 9px rgba(0,0,0,0.65);
+    }
+    & p{
+        font-size: 1.2rem;
+        text-shadow: 5px 4px 9px rgba(0,0,0,0.65);
+    }
+
+}
